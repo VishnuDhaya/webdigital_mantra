@@ -37,6 +37,6 @@ class BookRentController extends Controller
     }
 
     public function all_rented_detail(Request $req){
-        $records = Rentbook::all();
+        return Rentbook::all();
     }
 }

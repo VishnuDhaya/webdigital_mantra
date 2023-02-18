@@ -39,7 +39,7 @@ Route::prefix('user')->group(function(){
         Route::post('add_book', [BookController::class, 'add_book']);
         Route::post('edit_book', [BookController::class, 'edit_book']);
         Route::get('view_all_book', [BookController::class, 'view_all_book']);
-        Route::delete('delete_book/{id}', [UserController::class, 'delete_book']);
+        Route::delete('delete_book/{id}', [BookController::class, 'delete_book']);
 
         //Rent book routes
         
